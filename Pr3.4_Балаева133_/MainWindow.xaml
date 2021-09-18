@@ -1,0 +1,30 @@
+﻿<Window x:Class="Pr3._4_Балаева133_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr3._4_Балаева133_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Label Target="{Binding ElementName=txtA}" Content="Студенты" Margin="39,0,494,373"/>
+        <Label Target="{Binding ElementName=txtA}" Content="Оценки" Margin="181,0,352,373"/>
+        <Label Target="{Binding ElementName=txtA}" Content="Зачет" Margin="325,0,208,373"/>
+        <Label Target="{Binding ElementName=txtA}" Content="Не аттестованные" Margin="454,0,79,373"/>
+        <ListBox Name="student" Background="LightCoral" Margin="10,25,630,10" SelectionChanged="student_SelectionChanged"/>
+
+        <ListBox Name="assessment" Background="LightCyan" Margin="162,25,522,10"/>
+        <ListBox Name="test" Background="LightGoldenrodYellow" Margin="275,25,357,10" SelectionChanged="test_SelectionChanged"/>
+        <ListBox Name="certified" Background="LightPink" Margin="440,25,197,10" SelectionChanged="certified_SelectionChanged"/>
+        <Button Name="spis" Background="LightCoral" Click="spis_Click" Margin="622,68,30,320" Content="Добавить в список"/>
+
+        <TextBox Margin="617,25,30,365" Name="tb1" TextChanged="tb1_TextChanged"/>
+        <Button Name="at" Margin="622,116,30,272" Click="at_Click" Background="LightGoldenrodYellow" Content="Зачёт" RenderTransformOrigin="0.5,0.5" />
+        <Button Name="noat" Margin="622,169,30,219" Click="noat_Click" Background="LightPink" Content="Не аттестован"/>
+        <Button Name="och" Margin="622,349,30,39" Click="och_Click" Background="LightSalmon" Content="Очистить результаты"/>
+        <Button Name="asses" Margin="622,284,30,104" Click="asses_Click"  Background="LightCyan" Content="Оценка"/>
+        <TextBox Margin="655,234,79,156" Name="tb2" TextChanged="tb2_TextChanged"/>
+
+
+    </Grid>
+</Window>
